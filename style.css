@@ -1,0 +1,106 @@
+body{
+    background: dodgerblue;
+}
+
+select {
+    height: 35px;
+    width: 250px;
+}
+
+.multiplication {
+    padding: 10px;
+    margin: 10px;
+    background: blueviolet;
+    font-size: 22px;
+    color: #fff;
+    float: left;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+/*-------clock-----*/
+
+#clockContainer {
+    position: relative;
+    height: 40vw;
+    /*to make the height and width responsive*/
+    width: 35vw;
+    background: url(clock.png) no-repeat;
+    /*setting our background image*/
+    background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+/*-----calculator---*/
+.calculator {
+    width: 300px;
+    height: 450px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: blueviolet;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.display {
+    height: 80px;
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 5px;
+}
+
+button {
+    height: 50px;
+    width: 70px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+button:hover {
+    background-color: #e1e1e1;
+}
